@@ -11,3 +11,42 @@ table { border-collapse: collapse; border-spacing: 0;}
   src: url(./assets/fonts/norse-2.ttf); /* url of the font */
 }
 
+body {
+  display:flex;
+}
+
+.sidebar {
+  background-image: url('assets/images/sidebar.jpg');
+  background-size: cover;
+  min-height:100vh;
+  align-items: center;
+  justify-content: center;
+  min-width:30vw;
+  margin:auto;
+  display:flex;
+}
+
+.title-bg {
+  display:flex;
+  gap:10px;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  padding:15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom:70%;
+}
+
+.title-bg img {
+  width:4vw;
+  height:auto;
+}
+
+.title-bg h1 {
+  font-family: norse;
+  font-size: 4vw;
+  text-align: center;
+  margin-top: 20px;
+  color:white;
+}
+
