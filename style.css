@@ -1,4 +1,4 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display: block;}
 body { line-height: 1;}
 ol,ul { list-style: none;}
@@ -11,8 +11,13 @@ table { border-collapse: collapse; border-spacing: 0;}
   src: url(./assets/fonts/norse-2.ttf); /* url of the font */
 }
 
+:root {
+  font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
   display:flex;
+  background-color: #F9FAFB;
 }
 
 .sidebar {
@@ -21,7 +26,7 @@ body {
   min-height:100vh;
   align-items: center;
   justify-content: center;
-  min-width:30vw;
+  min-width:40vw;
   margin:auto;
   display:flex;
 }
@@ -44,9 +49,127 @@ body {
 
 .title-bg h1 {
   font-family: norse;
-  font-size: 4vw;
+  font-size: 6rem;
   text-align: center;
   margin-top: 20px;
   color:white;
 }
 
+.main-content {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  margin-bottom:5vh;
+  font-weight:500;
+  font-size:1.5rem;
+  padding-left:50px;
+  padding-right:20%;
+}
+
+.form-container {
+  background-color: white;
+  width:100%;
+  box-shadow: 1px 1px 5px rgba(18, 40, 75, 0.3);
+}
+
+.signup-form {
+  padding:10px 50px 25px 50px;
+}
+
+.signup-form h3 {
+  font-size:1.5rem;
+  font-weight:500;
+  margin-bottom:25px;
+  margin-top:15px;
+  color: #222C3A;
+}
+
+.signup-form input {
+  border-radius:5px;
+  border-color: #E5E7EB;
+  border-style:solid;
+  border-width: 1px;
+  box-shadow: none;
+  font-size: 1rem;
+  padding:7px 5px;
+  width:100%;
+  margin-bottom: 15px;
+}
+
+.signup-form input:focus {
+  outline:none;
+  border-color: #3B82F6;
+  box-shadow: 1px 1px 4px rgba(18, 40, 75, 0.3);
+}
+
+.signup-form input:invalid {
+  border-color: #EF4444;
+}
+
+.signup-form div {
+  display:flex;
+  justify-content: flex-start;
+  width: 60%;
+  padding-right: 10%;
+}
+
+.signup-form label {
+  text-transform: uppercase;
+  color: #222C3A;
+  margin-bottom:3px;
+  letter-spacing: 1.5px;
+  font-size: 0.9rem;
+  font-weight:500;
+}
+
+.signup-form div > div {
+  display:flex;
+  flex-direction: column;
+  margin-bottom:10px;
+  margin-right:0;
+  width:100%;
+}
+
+.form-inputs {
+  background-color:white;
+}
+
+.footer {
+  display:flex;
+  padding-top:17px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width:100%;
+}
+
+.footer p {
+  font-size:1rem;
+  color: #1b1b1b;
+  margin-top:30px;
+  margin-left:50px;
+}
+
+.footer a {
+  color: #596D48;
+  font-weight:bold;
+  text-decoration: none;
+}
+
+.footer button {
+  margin-top:10px;
+  background-color: #596D48;
+  box-shadow: 1px 1px 4px rgba(18, 40, 75, 0.5);
+  color:white;
+  border:none;
+  border-radius:5px;
+  padding:15px 40px 15px 40px;
+  font-size:1rem;
+  cursor:pointer;
+  margin-left:50px;
+  font-weight:600;
+}
