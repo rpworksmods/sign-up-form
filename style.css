@@ -173,3 +173,11 @@ body {
   margin-left:50px;
   font-weight:600;
 }
+
+.footer button:hover {
+  background-color: #4e5c3f;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
